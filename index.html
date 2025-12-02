@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ozex ff</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+/* ===== أساسيات ===== */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #050011;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ===== خلفية هندسية متحركة ===== */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 20%, #7a00ff33, transparent),
+                radial-gradient(circle at 80% 80%, #0066ff33, transparent);
+    z-index: -1;
+    animation: moveBg 15s infinite alternate ease-in-out;
+    filter: blur(35px);
+}
+
+@keyframes moveBg {
+    0% {transform: translate(0,0);}
+    50% {transform: translate(15px,15px);}
+    100% {transform: translate(0,0);}
+}
+
+/* ===== كارد ثلاثي الأبعاد ===== */
+.card-container {
+    perspective: 1200px;
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.04);
+    border-radius: 28px;
+    padding: 30px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 30px #7a00ff44, 0 0 60px #0066ff33;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+/* ===== زوايا هندسية ===== */
+.card::before, .card::after {
+    content:"";
+    position:absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 20%;
+    opacity:0.2;
+    filter: blur(20px);
+}
+
+.card::before {
+    top:-50px;
+    right:-50px;
+    background: #7a00ff;
+}
+
+.card::after {
+    bottom:-50px;
+    left:-50px;
+    background: #00eaff;
+}
+
+/* ===== صورة المشهور ===== */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    border: 4px solid #7a00ff;
+    box-shadow: 0 0 35px #7a00ff, 0 0 60px #0066ff;
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+/* ===== النصوص ===== */
+h1 {
+    text-align:center;
+    color: #b78aff;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.story {
+    text-align:center;
+    line-height:1.8;
+    color:#ddd;
+    font-size:17px;
+    margin-bottom:25px;
+}
+
+/* ===== الأزرار Neon ===== */
+.btn {
+    display:block;
+    width:90%;
+    margin:12px auto;
+    padding:16px;
+    border-radius:50px;
+    text-align:center;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    background: linear-gradient(135deg, #7a00ff, #0066ff);
+    box-shadow: 0 0 25px #7a00ffaa, 0 0 50px #0066ff88;
+    transition:0.3s;
+}
+.btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 35px #7a00ff, 0 0 60px #0066ff;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align:center;
+    color:#bbb;
+    margin:50px 0 30px 0;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="card-container">
+    <div class="card">
+        <img class="profile-img" src="491452926_17843227293478092_6467575474614289437_n.jpg" alt="profile">
+        <h1>ozex ff</h1>
+        <p class="story">
+            انا ركان وهاي قصتي ك شخص غير مجرى التاريخ ؟
+مسيرتي بالمحتوى ما بلشت من فراغ بلشت من شغف وحب ل صناعة المحتوى ، انا كنت العب واعيش اللحظات الخاصه فيني بس بقول بحالي أنه ليش ما اخلي الناس تعيش معي نفس الشعور ؟
+بالبدايه كنت اصور لقطات الي ، بس اكتشفت أنه إذا بدي اتميز لازم اكون مختلف ومن هون بلشت مسيرتي !!
+لقطه غيرت مجرى التاريخ ، صارت بصمه خاصه فيني وانا اخترتها لأنه إذا ربطتها بأي لقطه رح تتحول لمشهد عظيم فبتقدر تحكي صارت علامه تجاريه مربوطه باسمي !!
+وانا ما بعمل فيديو عشان استعرض لقطات لا الهدف اكبر من هيك !؟
+الفكره اني اخلي المتابع يعيش اللحظه ويحس بالحماس والخوف والانتصار !!
+والهدف اني اصنع هوية خاصه فيني بين صانعي المحتوى أما بالنسبة لليوتيوب ف هو أحد طموحاتي المستقبليه !!
+💢 اكتبلي رسالة ، انتقاد ، مدح ، شكر ، ذم ، اي اشي من قلبك والهدف اني رح ارجع بعد سنه وأقرأ التعليقات الي بالبوست وأشوف وين كنت ووين صرت وشكرا لكل حدا وصل لهون !
+
+        </p>
+        <a class="btn" href="https://www.instagram.com/ozex_ff?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">حساب الإنستقرام</a>
+        <a class="btn" href="https://www.youtube.com/@ozex-ff">يوتيوب</a>
+    </div>
+</div>
+
+<footer>© 2025 جميع الحقوق محفوظة</footer>
+
+</body>
+</html>
